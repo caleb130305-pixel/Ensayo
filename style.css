@@ -1,0 +1,75 @@
+/* Estilo general del cuerpo de la página */
+body {
+    font-family: 'Playfair Display', serif; /* Mantenemos la fuente cursiva */
+    background-color: #FFFBEB; /* Un fondo amarillo muy claro y cálido */
+    color: #403D39; /* Un color de texto café oscuro, más cálido que el negro */
+    line-height: 1.8;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Contenedor principal para centrar el contenido */
+.container {
+    max-width: 800px;
+    margin: 40px auto; /* Centra el contenedor en la página */
+    padding: 20px;
+    background-color: #ffffff; /* Mantenemos el fondo del contenedor blanco para contraste */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el encabezado */
+header h1 {
+    text-align: center;
+    font-size: 2.5em; /* Tamaño de letra grande para el título */
+    color: #FF8C42; /* Un naranja vibrante y llamativo para el título */
+    border-bottom: 2px solid #FFD166; /* Un borde inferior amarillo brillante */
+    padding-bottom: 10px;
+}
+
+/* Estilo para los párrafos de texto */
+.content p {
+    font-size: 1.4em; /* Tamaño de letra cómodo para leer */
+    text-align: justify; /* Justifica el texto para un look de libro */
+    margin-bottom: 20px;
+}
+
+.final-p {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #06D6A0; /* Un verde menta brillante para el mensaje final */
+}
+
+/* Estilo para la galería de imágenes */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Crea una cuadrícula de 3 columnas */
+    gap: 15px; /* Espacio entre las fotos */
+    margin: 40px 0;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados para las fotos */
+    border: 3px solid #FFD166; /* Borde amarillo brillante en cada foto */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Transición suave para el efecto hover */
+}
+
+.gallery img:hover {
+    transform: scale(1.05); /* Agranda ligeramente la foto al pasar el mouse sobre ella */
+}
+
+/* Estilos para la animación de desvanecimiento */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
